@@ -5,15 +5,11 @@ Author: Fauzan Alghifari
 Author URI: http://wordpress.org/
 Description: tema untuk kalian
 */
+/*.allcontent {*/
+/*    min-height: calc(100vh - 400px);*/
+/*}*/
 
 /*CSS HEADER*/
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "poppins", sans-serif;
-}
-
 header {
     width: 100%;
     height: 100px;
@@ -157,16 +153,50 @@ header .search .fa-search {
     height: 100%;
 }
 
-/*CSS ADV MIDDLE*/
+/*CSS CALENDER*/
+.app-card-calender {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    background: orange;
+    margin-top: 50px;
+}
 
+.app-card-calender table {
+    text-align: center;
+    padding: 1px;
+    border: 1px solid black;
+}
+
+/*CSS ADV RIGHT*/
+.app-card-adv-right {
+    width: 100%;
+    height: 240px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 0 10px black;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.app-card-adv-right .app-card-adv-right__images {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.app-card-adv-right .app-card-adv-right__images img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
 
 /*CSS SINGLE PAGE*/
 .singlepage {
     width: 1280px;
-    height: 100%;
+    min-height: 100%;
     background: white;
     margin-bottom: 20px;
-    margin-right: 10px;
 }
 
 .singlepage .singlepage__images {
@@ -198,7 +228,63 @@ header .search .fa-search {
     text-align: justify;
 }
 
+/*CSS SEARCH PAGE*/
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+.app-card-search {
+    width: 100%;
+    height: 150px;
+    background: white;
+    box-shadow: 0 0 10px black;
+    margin-bottom: 20px;
+    display: flex;
+    border-radius: 10px;
+}
 
+.app-card-search .app-card-search__images {
+    position: relative;
+    overflow: hidden;
+    width: 400px;
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+}
+
+.app-card-search .app-card-search__images img {
+    position: relative;
+    object-fit: cover;
+    filter: brightness(100%);
+    transition:  filter 0.5s ease;
+}
+
+.app-card-search .app-card-search__images img:hover {
+    filter: brightness(120%);
+}
+
+.app-card-search .app-card-search__box {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+
+.app-card-search .app-card-search__box h3{
+    font-size: 18px;
+}
+
+.app-card-search .app-card-search__box a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.app-card-search .app-card-search__box a:hover {
+    color: orange;
+}
+
+.app-card-search .app-card-search__box p {
+    font-size: 14px;
+}
 
 /*CSS CONTENT TOP*/
 .flex {
@@ -293,6 +379,7 @@ header .search .fa-search {
 .app-card-secondary .app-card-secondary__container .app-card-secondary__images {
     width: 100%;
     height: 200px;
+    border-radius: 10px;
 }
 
 .app-card-secondary .app-card-secondary__container .app-card-secondary__images img {
@@ -378,22 +465,21 @@ header .search .fa-search {
     width: 1280px;
     height: 500px;
     background: white;
-    display: flex;
-    margin-bottom: 20px;
 }
 
 .rightcontent-app .rightcontent-app-right {
     width: 100%;
     background: white;
-    margin-bottom: 20px;
-    /*overflow: hidden;*/
-    /*overflow-y: scroll;*/
 }
 
 .rightcontent-app .rightcontent-app-right h1 {
-    font-size: 36px;
-    color: orange;
+    font-size: 32px;
+    color: white;
+    text-align: center;
     font-weight: bold;
+    border-radius: 10px;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(253,45,45,1) 100%);
 }
 
 .flexing-column {
@@ -412,6 +498,7 @@ header .search .fa-search {
     overflow: hidden;
     width: 150px;
     margin-bottom: 10px;
+    border-radius: 10px;
 }
 
 .rightcontent-app .rightcontent-app-right  .rightcontent-app-right-card__images img {
@@ -432,8 +519,8 @@ header .search .fa-search {
 
 .rightcontent-app .rightcontent-app-right .rightcontent-app-right-card__box h3 {
     font-size: 14px;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .rightcontent-app .rightcontent-app-right .rightcontent-app-right-card__box a {
@@ -519,7 +606,7 @@ header .search .fa-search {
     font-size: 14px;
 }
 
-/*CSS CONTENT ADVERTISEMENT*/
+/*CSS ADV MIDDLE*/
 .app-card-adv-middle {
     width: 1280px;
     height: 300px;
@@ -532,27 +619,23 @@ header .search .fa-search {
 
 .app-card-adv-middle .app-card-adv-middle__images {
     position: relative;
-    overflow: hidden;
     width: 100%;
     height: 100%;
+
 }
 
 .app-card-adv-middle .app-card-adv-middle__images img {
     object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
 
 /*CSS FOOTER*/
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 footer {
     width: 100%;
     border: 2px solid orange;
     background: black;
-    height: auto;
+    height: 250px;
     font-family: "poppins", sans-serif;
     color: white;
 }

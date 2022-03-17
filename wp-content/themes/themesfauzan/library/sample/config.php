@@ -436,7 +436,7 @@ Redux::set_section($opt_name, array (
             'type' => 'media',
             'title' => __('Enter your advertisement top banner', 'FA'),
             'subtitle' => __('You can upload advertisement top banner any kinds', 'FA'),
-            'desc' => __('Size : 1280x150', 'FA'),
+            'desc' => __('Size : unknown', 'FA'),
             'compiler' => true,
             'default' => array(
                 'url' => get_template_directory_uri().'/images/advertisement-top.png'
@@ -472,7 +472,7 @@ Redux::set_section($opt_name, array (
             'type' => 'media',
             'title' => __('Enter your advertisement middle banner', 'FA'),
             'subtitle' => __('You can upload advertisement middle banner any kinds', 'FA'),
-            'desc' => __('Size : 1280x150', 'FA'),
+            'desc' => __('Size : unknown', 'FA'),
             'customizer_width' => '1280px',
             'compiler' => true,
             'default' => array(
@@ -483,41 +483,67 @@ Redux::set_section($opt_name, array (
 ));
 
 Redux::set_section($opt_name, array (
-    'title' => __('Advertisement Bottom', 'FA'),
-    'id' => 'adv-bottom',
+    'title' => __('Advertisement Right', 'FA'),
+    'id' => 'adv-right',
     'subsection' => true,
-    'desc' => __('This is advertisement bottom area', 'FA'),
+    'desc' => __('This is advertisement right area', 'FA'),
     'icon' => __('dashicons dashicons-wordpress', 'FA'),
     'fields' => array(
         array(
-            'id' => 'advbottom-switchbutton',
+            'id' => 'advright1-switchbutton',
             'type' => 'switch',
-            'title' => __('Enter your switch button advertisement bottom url', 'FA'),
-            'subtitle' => __('You can switch button  advertisement bottom url any kinds', 'FA'),
-            'desc' => __('This is switch button advertisement bottom url area', 'FA'),
+            'title' => __('Enter your switch button advertisement right first url', 'FA'),
+            'subtitle' => __('You can switch button  advertisement right first url any kinds', 'FA'),
+            'desc' => __('This is switch button advertisement right first url area', 'FA'),
             'default' => true
         ),
         array(
-            'id' => 'advbottom-url',
+            'id' => 'advright1-url',
             'type' => 'text',
-            'title' => __('Enter your advertisement bottom url', 'FA'),
-            'subtitle' => __('You can advertisement bottom url any kinds', 'FA'),
-            'desc' => __('This is advertisement bottom url area', 'FA')
+            'title' => __('Enter your advertisement right first url', 'FA'),
+            'subtitle' => __('You can advertisement right first url any kinds', 'FA'),
+            'desc' => __('This is advertisement right first url area', 'FA')
         ),
         array(
-            'id' => 'advbottom-image',
+            'id' => 'advright1-image',
             'type' => 'media',
-            'title' => __('Enter your advertisement bottom banner', 'FA'),
-            'subtitle' => __('You can upload advertisement bottom banner any kinds', 'FA'),
-            'desc' => __('Size : 1280x150', 'FA'),
-            'customizer_width' => '1280px',
+            'title' => __('Enter your advertisement right first banner', 'FA'),
+            'subtitle' => __('You can upload advertisement right first banner any kinds', 'FA'),
+            'desc' => __('Size : unknown', 'FA'),
             'compiler' => true,
             'default' => array(
-                'url' => get_template_directory_uri().'/images/advertisement-bottom.png'
+                'url' => get_template_directory_uri().'/images/advertisement-top.png'
+            )
+        ),
+        array(
+            'id' => 'advright2-switchbutton',
+            'type' => 'switch',
+            'title' => __('Enter your switch button advertisement right secondary url', 'FA'),
+            'subtitle' => __('You can switch button  advertisement right secondary url any kinds', 'FA'),
+            'desc' => __('This is switch button advertisement right secondary url area', 'FA'),
+            'default' => true
+        ),
+        array(
+            'id' => 'advright2-url',
+            'type' => 'text',
+            'title' => __('Enter your advertisement right secondary url', 'FA'),
+            'subtitle' => __('You can advertisement right secondary url any kinds', 'FA'),
+            'desc' => __('This is advertisement right secondary url area', 'FA')
+        ),
+        array(
+            'id' => 'advright2-image',
+            'type' => 'media',
+            'title' => __('Enter your advertisement right secondary banner', 'FA'),
+            'subtitle' => __('You can upload advertisement right secondary banner any kinds', 'FA'),
+            'desc' => __('Size : unknown', 'FA'),
+            'compiler' => true,
+            'default' => array(
+                'url' => get_template_directory_uri().'/images/advertisement-top.png'
             )
         )
     )
 ));
+
 
 // MENU : FOOTER
 Redux::set_section($opt_name, array(
