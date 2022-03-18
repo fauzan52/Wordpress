@@ -1,8 +1,10 @@
 <?php
+$CurrentPage = get_query_var('paged');
 $AllPost = new WP_Query(array(
     'post_type' => 'post',
     'posts_per_page' => 999,
     'offset' => 4,
+    'paged' => $CurrentPage
 ));
 ?>
 <?php if ($AllPost->have_posts()) : ?>
@@ -22,3 +24,6 @@ $AllPost = new WP_Query(array(
         </div>
     <?php endwhile; ?>
 <?php endif; ?>
+
+
+

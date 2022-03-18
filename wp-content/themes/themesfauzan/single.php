@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+<body>
 <div class="allcontent">
     <div class="container">
         <div class="row">
@@ -29,6 +30,8 @@
         </div>
     </div>
 </div>
+</body>
+
 <div class="clear">
-<?php get_footer(); ?>
+    <?php get_footer(); ?>
 </div>

@@ -8,6 +8,14 @@ Description: tema untuk kalian
 /*.allcontent {*/
 /*    min-height: calc(100vh - 400px);*/
 /*}*/
+body {
+}
+
+.allcontent {
+    min-height: 100vh;
+    padding-bottom: 10px;
+    padding-top: 80px;
+}
 
 /*CSS HEADER*/
 header {
@@ -122,8 +130,8 @@ header .search .fa-search {
 
 /*CSS ADV TOP*/
 .app-card-first {
-    width: 1280px;
-    height: 150px;
+    width: 12800px;
+    height: 200px;
     overflow: hidden;
     background: white;
     box-shadow: 0 0 10px black;
@@ -140,7 +148,7 @@ header .search .fa-search {
 .app-card-first .app-card-first__container .app-card-first__images {
     border-radius: 10px;
     width: 1280px;
-    height: 150px;
+    height: 200px;
 }
 
 .app-card-first .app-card-first__container .app-card-first__images img {
@@ -177,6 +185,7 @@ header .search .fa-search {
     box-shadow: 0 0 10px black;
     border-radius: 10px;
     margin-bottom: 20px;
+    border: 5px solid black;
 }
 
 .app-card-adv-right .app-card-adv-right__images {
@@ -291,11 +300,6 @@ h1 {
     display: flex;
     width: 100%;
     max-width: 1280px;
-    float: left;
-}
-
-.distance{
-    margin-top: 90px;
 }
 
 .app-card-primary {
@@ -463,8 +467,8 @@ h1 {
 /*CSS RIGHT CONTENT */
 .rightcontent-app {
     width: 1280px;
-    height: 500px;
     background: white;
+
 }
 
 .rightcontent-app .rightcontent-app-right {
@@ -473,7 +477,7 @@ h1 {
 }
 
 .rightcontent-app .rightcontent-app-right h1 {
-    font-size: 32px;
+    font-size: 28px;
     color: white;
     text-align: center;
     font-weight: bold;
@@ -621,13 +625,18 @@ h1 {
     position: relative;
     width: 100%;
     height: 100%;
-
 }
 
 .app-card-adv-middle .app-card-adv-middle__images img {
     object-fit: cover;
     width: 100%;
     height: 100%;
+}
+
+/*CSS PAGINATION*/
+.page-numbers.current > span {
+    background: gray;
+    color: white;
 }
 
 /*CSS FOOTER*/
