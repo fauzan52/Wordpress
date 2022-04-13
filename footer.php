@@ -31,7 +31,6 @@ global $fauzanredux;
                 <li><a href="<?php echo $fauzanredux['social-network-url']['Linkedin']; ?>" target="_blank"><i
                                 class="fa fa-linkedin-square"></i></a></li>
             <?php endif; ?>
-
             <?php if (!empty($fauzanredux['social-network-url']['Whatsapp'])): ?>
                 <li><a href="https://wa.me/<?php echo $fauzanredux['social-network-url']['Whatsapp']; ?>"
                        target="_blank"><i class="fa fa-whatsapp"></i></a></li>
